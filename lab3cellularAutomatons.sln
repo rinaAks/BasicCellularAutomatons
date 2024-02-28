@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab3cellularAutomatons", "lab3cellularAutomatons\lab3cellularAutomatons.csproj", "{FF10FFE4-8098-41B0-9E2F-DEC095B666ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF10FFE4-8098-41B0-9E2F-DEC095B666ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF10FFE4-8098-41B0-9E2F-DEC095B666ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF10FFE4-8098-41B0-9E2F-DEC095B666ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF10FFE4-8098-41B0-9E2F-DEC095B666ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63F571D1-6018-400D-9C9C-95187CBD36CE}
+	EndGlobalSection
+EndGlobal
