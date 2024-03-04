@@ -35,18 +35,16 @@
             this.btStart = new System.Windows.Forms.Button();
             this.btStop = new System.Windows.Forms.Button();
             this.btRandom = new System.Windows.Forms.Button();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.matrixGrid1 = new lab3cellularAutomatons.MatrixGrid();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edRule)).BeginInit();
-            this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.flowLayoutPanel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -100,6 +98,7 @@
             this.btStart.TabIndex = 2;
             this.btStart.Text = "Старт";
             this.btStart.UseVisualStyleBackColor = true;
+            this.btStart.Click += new System.EventHandler(this.btStart_Click);
             // 
             // btStop
             // 
@@ -120,21 +119,13 @@
             this.btRandom.UseVisualStyleBackColor = true;
             this.btRandom.Click += new System.EventHandler(this.btRandom_Click);
             // 
-            // flowLayoutPanel2
+            // panel3
             // 
-            this.flowLayoutPanel2.Controls.Add(this.matrixGrid1);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(225, 3);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(575, 447);
-            this.flowLayoutPanel2.TabIndex = 0;
-            // 
-            // matrixGrid1
-            // 
-            this.matrixGrid1.GridSize = new System.Drawing.Size(20, 20);
-            this.matrixGrid1.Location = new System.Drawing.Point(3, 3);
-            this.matrixGrid1.Name = "matrixGrid1";
-            this.matrixGrid1.Size = new System.Drawing.Size(572, 444);
-            this.matrixGrid1.TabIndex = 5;
+            this.panel3.Location = new System.Drawing.Point(271, 39);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(479, 372);
+            this.panel3.TabIndex = 6;
             // 
             // Form1
             // 
@@ -148,21 +139,19 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edRule)).EndInit();
-            this.flowLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private MatrixGrid matrixGrid1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown edRule;
         private System.Windows.Forms.Button btStart;
         private System.Windows.Forms.Button btStop;
         private System.Windows.Forms.Button btRandom;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 
