@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.tbOutput = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.edRule = new System.Windows.Forms.NumericUpDown();
             this.btStart = new System.Windows.Forms.Button();
-            this.btStop = new System.Windows.Forms.Button();
             this.btRandom = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.btClear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edRule)).BeginInit();
@@ -51,18 +52,34 @@
             this.panel1.Size = new System.Drawing.Size(800, 450);
             this.panel1.TabIndex = 6;
             // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(271, 39);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(479, 372);
+            this.panel3.TabIndex = 6;
+            // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btClear);
+            this.panel2.Controls.Add(this.tbOutput);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.edRule);
             this.panel2.Controls.Add(this.btStart);
-            this.panel2.Controls.Add(this.btStop);
             this.panel2.Controls.Add(this.btRandom);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(222, 450);
             this.panel2.TabIndex = 8;
+            // 
+            // tbOutput
+            // 
+            this.tbOutput.Location = new System.Drawing.Point(25, 21);
+            this.tbOutput.Name = "tbOutput";
+            this.tbOutput.Size = new System.Drawing.Size(169, 22);
+            this.tbOutput.TabIndex = 8;
             // 
             // label1
             // 
@@ -100,18 +117,9 @@
             this.btStart.UseVisualStyleBackColor = true;
             this.btStart.Click += new System.EventHandler(this.btStart_Click);
             // 
-            // btStop
-            // 
-            this.btStop.Location = new System.Drawing.Point(80, 233);
-            this.btStop.Name = "btStop";
-            this.btStop.Size = new System.Drawing.Size(75, 23);
-            this.btStop.TabIndex = 3;
-            this.btStop.Text = "Стоп";
-            this.btStop.UseVisualStyleBackColor = true;
-            // 
             // btRandom
             // 
-            this.btRandom.Location = new System.Drawing.Point(51, 329);
+            this.btRandom.Location = new System.Drawing.Point(51, 313);
             this.btRandom.Name = "btRandom";
             this.btRandom.Size = new System.Drawing.Size(123, 54);
             this.btRandom.TabIndex = 7;
@@ -119,13 +127,15 @@
             this.btRandom.UseVisualStyleBackColor = true;
             this.btRandom.Click += new System.EventHandler(this.btRandom_Click);
             // 
-            // panel3
+            // btClear
             // 
-            this.panel3.Location = new System.Drawing.Point(271, 39);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(479, 372);
-            this.panel3.TabIndex = 6;
+            this.btClear.Location = new System.Drawing.Point(69, 388);
+            this.btClear.Name = "btClear";
+            this.btClear.Size = new System.Drawing.Size(86, 23);
+            this.btClear.TabIndex = 0;
+            this.btClear.Text = "Очистить";
+            this.btClear.UseVisualStyleBackColor = true;
+            this.btClear.Click += new System.EventHandler(this.btClear_Click);
             // 
             // Form1
             // 
@@ -149,9 +159,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown edRule;
         private System.Windows.Forms.Button btStart;
-        private System.Windows.Forms.Button btStop;
         private System.Windows.Forms.Button btRandom;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox tbOutput;
+        private System.Windows.Forms.Button btClear;
     }
 }
 
